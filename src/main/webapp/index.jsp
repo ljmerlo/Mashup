@@ -64,7 +64,6 @@
 <!-- Header -->
 <header class="masthead bg-primary text-white text-center">
   <div class="container">
-    <img class="img-fluid mb-5 d-block mx-auto" src="resources/bootstrap/img/profile.png" alt="">
     <h1 class="text-uppercase mb-0">Trainz</h1>
     <hr class="star-light">
     <h2 class="font-weight-light mb-0">An API project by Lenny Merlo</h2>
@@ -102,6 +101,13 @@
           </div>
         </form>
       </div>
+    </div>
+    <br />
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>Info!</strong> Please only search for train stations and without any space. eg: Zürich HB = Zurich
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
   </div>
 </section>
@@ -163,7 +169,7 @@
       <h2 class="text-center text-uppercase text-white">Weather history for both locations</h2>
         <hr class="star-light mb-5">
           <div class="row">
-            <div class="col-lg-4 ml-auto">
+            <div class="col-lg-6 ml-auto">
               <c:if test="${requestScope.showWeatherA}">
                 <table class="table table-hover">
                   <thead>
@@ -190,7 +196,7 @@
                 <p>No weatherdata available for this location.</p>
               </c:if>
             </div>
-            <div class="col-lg-4 mr-auto">
+            <div class="col-lg-6 mr-auto">
               <c:if test="${requestScope.showWeatherB}">
               <table class="table table-hover">
                 <thead>
@@ -228,41 +234,11 @@
 <footer class="footer text-center">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 mb-5 mb-lg-0">
+      <div class="col-md-6">
         <h4 class="text-uppercase mb-4">Developer</h4>
         <p class="lead mb-0">Lenny Merlo, Rüti</p>
       </div>
-      <div class="col-md-4 mb-5 mb-lg-0">
-        <h4 class="text-uppercase mb-4">Around the Web</h4>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-              <i class="fab fa-fw fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-              <i class="fab fa-fw fa-google-plus-g"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-              <i class="fab fa-fw fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-              <i class="fab fa-fw fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-              <i class="fab fa-fw fa-dribbble"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <h4 class="text-uppercase mb-4">About Me</h4>
         <p class="lead mb-0">Application Developer in the 3rd year.</p>
       </div>
