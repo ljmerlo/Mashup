@@ -11,6 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/*
+ * @Author: Lenny Merlo
+ * @Version: 1.0
+ * @Class: WeatherServlet
+ */
+
 @WebServlet("/weatherServlet")
 public class WeatherServlet extends HttpServlet {
 

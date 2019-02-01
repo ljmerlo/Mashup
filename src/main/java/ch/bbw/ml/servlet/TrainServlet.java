@@ -1,7 +1,6 @@
 package ch.bbw.ml.servlet;
 
 import ch.bbw.ml.controller.TrainAPI;
-import ch.bbw.ml.model.SessionData;
 import ch.bbw.ml.model.Train;
 
 import javax.servlet.ServletException;
@@ -15,6 +14,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
+/*
+ * @Author: Lenny Merlo
+ * @Version: 1.0
+ * @Class: TrainServlet
+ */
 
 @WebServlet("/trainServlet")
 public class TrainServlet extends HttpServlet {
