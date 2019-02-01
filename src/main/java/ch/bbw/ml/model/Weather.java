@@ -1,5 +1,11 @@
 package ch.bbw.ml.model;
 
+/*
+ * @Author: Lenny Merlo
+ * @Version: 1.0
+ * @Class: Weather
+ */
+
 public class Weather {
 
     public String name;
