@@ -2,6 +2,12 @@ package ch.bbw.ml.model;
 
 import java.util.ArrayList;
 
+/*
+ * @Author: Lenny Merlo
+ * @Version: 1.0
+ * @Class: SessionData
+ */
+
 public class SessionData {
 
     ArrayList<Train> trains;

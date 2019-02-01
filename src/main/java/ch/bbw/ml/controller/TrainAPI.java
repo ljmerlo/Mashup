@@ -16,6 +16,12 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
+/*
+* @Author: Lenny Merlo
+* @Version: 1.0
+* @Class: TrainAPI
+*/
+
 public class TrainAPI {
 
     public ArrayList<Train> connections = null;
