@@ -104,7 +104,7 @@
     </div>
     <br />
     <div class="alert alert-info alert-dismissible fade show" role="alert">
-      <strong>Info!</strong> Please only search for train stations and without any space. eg: Zürich HB = Zurich
+      <strong>Info!</strong> Please only search for train stations and without any space. eg: Zürich HB = Zurich // Zürich Altstetten = Altstetten
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
