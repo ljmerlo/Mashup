@@ -31,7 +31,7 @@ public class TrainServlet extends HttpServlet {
         fromLocation = request.getParameter("trainFrom");
         toLocation = request.getParameter("trainTo");
 
-        String url = "http://transport.opendata.ch/v1/connections?from=" + fromLocation + "&to=" + toLocation + "&limit=3";
+        String url = "http://transport.opendata.ch/v1/connections?from=" + fromLocation + "&to=" + toLocation + "&limit=4";
         trainAPI.getSbbData(url);
 
         ArrayList<Train> trains = trainAPI.getConnections();

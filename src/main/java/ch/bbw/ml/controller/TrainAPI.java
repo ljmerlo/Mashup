@@ -15,11 +15,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class TrainAPI {
 
     public ArrayList<Train> connections = null;
+    public ArrayList<Train> earlyConnections = null;
 
     public void getSbbData(String url) {
 
@@ -50,6 +50,7 @@ public class TrainAPI {
                     JSONArray connections_arr = result.getJSONArray("connections");
 
                     connections = new ArrayList();
+                    earlyConnections = new ArrayList();
 
                     WeatherAPI weatherAPI = new WeatherAPI();
 
@@ -86,9 +87,13 @@ public class TrainAPI {
 
                         Train connection = new Train(i, trainFrom, trainTo);
 
-                        connections.add(connection);
+                        earlyConnections.add(connection);
 
                     }
+                    connections.add(earlyConnections.get(1));
+                    connections.add(earlyConnections.get(2));
+                    connections.add(earlyConnections.get(3));
+
                     ConnDB.insertTrain(connections);
                     ArrayList<Weather> weathers = weatherAPI.formatURL(connections.get(0));
 
