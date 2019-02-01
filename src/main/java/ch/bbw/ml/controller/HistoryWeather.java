@@ -4,6 +4,12 @@ import ch.bbw.ml.model.Weather;
 
 import java.util.ArrayList;
 
+/*
+ * @Author: Lenny Merlo
+ * @Version: 1.0
+ * @Class: HistoryWeather
+ */
+
 public class HistoryWeather {
 
     public static ArrayList<ArrayList<Weather>> weatherHistory(String locationA, String locationB){

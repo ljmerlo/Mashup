@@ -6,6 +6,12 @@ import ch.bbw.ml.model.Weather;
 import java.sql.*;
 import java.util.ArrayList;
 
+/*
+ * @Author: Lenny Merlo
+ * @Version: 1.0
+ * @Class: ConnDB
+ */
+
 public class ConnDB {
 
     public static void insertTrain(ArrayList<Train> connections){

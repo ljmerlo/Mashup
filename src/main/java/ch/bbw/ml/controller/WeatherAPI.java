@@ -17,6 +17,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+/*
+ * @Author: Lenny Merlo
+ * @Version: 1.0
+ * @Class: WeatherAPI
+ */
+
 public class WeatherAPI {
 
     public ArrayList<Weather> weathers = null;
